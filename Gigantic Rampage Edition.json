@@ -1,0 +1,82 @@
+{
+  "id": "gigantic-rampage-edition",
+  "title": "Gigantic Rampage Edition",
+  "triggers": [
+    {
+      "title": "KILL",
+      "id": "KILL",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46.5,
+        "y": 40,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5,
+        "height": 4,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    },
+    {
+      "title": "ASSIST",
+      "id": "ASSIST",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45,
+        "y": 40,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 5.5,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ASSIST"
+      }
+    }
+  ]
+}

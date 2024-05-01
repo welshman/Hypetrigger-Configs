@@ -1,0 +1,44 @@
+{
+  "id": "multiversus-solo",
+  "title": "MultiVersus (Solo)",
+  "triggers": [
+    {
+      "title": "Team Advantage",
+      "id": "M.TA",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38.5,
+        "y": 25,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 23.000000000000004,
+        "height": 5.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 0,
+          "g": 0,
+          "b": 255,
+          "threshold": 60
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "YOUR TEAM ADVANTAGE"
+      }
+    }
+  ]
+}
