@@ -1,0 +1,82 @@
+{
+  "id": "black-ops-3",
+  "title": "Black Ops 3",
+  "triggers": [
+    {
+      "title": "KILL",
+      "id": "kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45.5,
+        "y": 32,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.000000000000002,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[1lI7][0OoDU8][0OoDU8]"
+      }
+    },
+    {
+      "title": "ASSIST",
+      "id": "assist",
+      "debug": false,
+      "enabled": false,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 2,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 45.5,
+        "y": 32,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.000000000000002,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "[2ZQ][5SY]"
+      }
+    }
+  ]
+}
