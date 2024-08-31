@@ -1,0 +1,120 @@
+{
+  "id": "black-ops-6",
+  "title": "Black Ops 6",
+  "triggers": [
+    {
+      "title": "frag-kill",
+      "id": "frag-kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 52.99999999999999,
+        "y": 45.000000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.000000000000004,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Frag Kill"
+      }
+    },
+    {
+      "title": "elimination",
+      "id": "elimination",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 52.99999999999999,
+        "y": 45.000000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.000000000000004,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Elimination"
+      }
+    },
+    {
+      "title": "headshot",
+      "id": "headshot",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 5,
+      "secondsAfter": 5,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 52.99999999999999,
+        "y": 45.000000000000014,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 10.000000000000004,
+        "height": 10,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "Headshot"
+      }
+    }
+  ]
+}
