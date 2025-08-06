@@ -1,0 +1,196 @@
+{
+  "id": "bf6",
+  "title": "Battlefield 6",
+  "triggers": [
+    {
+      "title": "kill",
+      "id": "kill",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 15,
+        "y": 70.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 25,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "KILL"
+      }
+    },
+    {
+      "title": "assist",
+      "id": "assist",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 15,
+        "y": 70.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 25,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ASSIST"
+      }
+    },
+    {
+      "title": "revive",
+      "id": "revive",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 15,
+        "y": 70.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 25,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "SQUAD REVIVE"
+      }
+    },
+    {
+      "title": "death",
+      "id": "death",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 52.99999999999999,
+        "y": 71.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 15,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "SKIP"
+      }
+    },
+    {
+      "title": "victory",
+      "id": "victory",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 15,
+      "secondsAfter": 15,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38.5,
+        "y": 41.50000000000001,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 23,
+        "height": 11,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    }
+  ]
+}
