@@ -1,0 +1,120 @@
+{
+  "id": "black-ops-7",
+  "title": "Black Ops 7",
+  "triggers": [
+    {
+      "title": "ELIMINATED",
+      "id": "ELIMINATED",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 10,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 38.5,
+        "y": 85.00000000000003,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 30
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "ELIMINATED"
+      }
+    },
+    {
+      "title": "HEADSHOT",
+      "id": "HEADSHOT",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 10,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 46.5,
+        "y": 20.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 7,
+        "height": 6.5,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 42
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "HEADSHOT"
+      }
+    },
+    {
+      "title": "VICTORY",
+      "id": "VICTORY",
+      "debug": false,
+      "enabled": true,
+      "runForever": false,
+      "secondsBefore": 10,
+      "secondsAfter": 10,
+      "cropFunction": {
+        "yAnchor": "top",
+        "xAnchor": "left",
+        "x": 27.5,
+        "y": 39.5,
+        "xUnit": "%",
+        "yUnit": "%",
+        "width": 45,
+        "height": 20,
+        "widthUnit": "%",
+        "heightUnit": "%"
+      },
+      "filters": [
+        {
+          "type": "threshold",
+          "title": "",
+          "r": 255,
+          "g": 255,
+          "b": 255,
+          "threshold": 35
+        }
+      ],
+      "ai": {
+        "type": "ocr"
+      },
+      "parser": {
+        "type": "regex",
+        "regex": "VICTORY"
+      }
+    }
+  ]
+}
